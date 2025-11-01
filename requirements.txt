@@ -1,23 +1,15 @@
-# Core runtime
-python==3.10
-sqlite3  # built‑in, no need but keep for clarity
-
-# The chatbot core
+# Core, project‑specific dependencies -------------------------------------------------
 chatterbot==1.0.5
 chatterbot_corpus==0.1.0
 nltk==3.8.1
+scikit-learn==1.4.0
+pandas==2.2.1
+kaggle==1.6.12
+kagglehub==0.1.7
 spacy==3.7.2
 en_core_web_sm==3.7.2
-pandas==2.2.1
-
-# Data / training / ML
-scikit-learn==1.4.0
-kagglehub==0.1.7
-
-# Optional (web)
 flask==3.0.3
 sqlalchemy==2.0.30
 
-# Development helpers
-pip==24.0
-virtualenv==20.24.4
+# Optional helpers (uncomment if you want them)
+# python-dotenv==1.0.0
