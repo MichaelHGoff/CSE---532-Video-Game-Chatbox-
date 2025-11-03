@@ -1,11 +1,11 @@
 # Core, project‑specific dependencies -------------------------------------------------
+spacy==3.8.7
 nltk==3.8.1
 scikit-learn==1.4.0
 pandas==2.2.1
 kaggle==1.6.12
 kagglehub==0.1.7
-spacy==3.7.2
-en_core_web_sm==3.7.2
+
 flask==3.0.3
 sqlalchemy==2.0.30
 
@@ -20,4 +20,3 @@ sqlalchemy==2.0.30
 # 2.  Latest official corpus – it’s a drop‑in replacement.
 chatterbot_corpus==1.2.2
 # ------------------------------------------------------------
-
