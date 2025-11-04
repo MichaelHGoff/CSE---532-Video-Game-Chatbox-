@@ -1,0 +1,22 @@
+# Core, project‑specific dependencies -------------------------------------------------
+spacy==3.8.7
+nltk==3.8.1
+scikit-learn==1.4.0
+pandas==2.2.1
+kaggle==1.6.12
+kagglehub==0.1.7
+
+flask==3.0.3
+sqlalchemy==2.0.30
+
+# Optional helpers (uncomment if you want them)
+# python-dotenv==1.0.0
+
+# ------------------------------------------------------------
+# 1.  ChatterBot – install the master branch that still works
+#    (gives you the same API you’ve been using).
+-e git+https://github.com/gunthercox/ChatterBot.git@master#egg=chatterbot
+
+# 2.  Latest official corpus – it’s a drop‑in replacement.
+chatterbot_corpus==1.2.2
+# ------------------------------------------------------------
