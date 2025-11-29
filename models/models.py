@@ -10,7 +10,7 @@ class GameRecommender:
 
     #from the title.  The class keeps everything in instance attributes so
     #it can be reused without re‑instantiation.
-    #reommends based on title, genre, and platform using TF-IDF + cosine similarity
+    #reommends based on title, genre, ausing TF-IDF + cosine similarity
     
     def __init__(self, df: pd.DataFrame):
         # Normalise column names – strip, lower‑case
@@ -22,6 +22,10 @@ class GameRecommender:
         if "title" not in df.columns and "name" in df.columns:
             df = df.rename(columns={"name": "title"})
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/feature/recommndation-imporvements
         #Pick the required column
         for col in["title", "genre"]:
             if col not in df.columns:
@@ -71,3 +75,4 @@ class GameRecommender:
             for i, (_, row) in enumerate(top_games.iterrows())
         )
         return f"\nWe recommend: *{len(top_games)} game(s) matching your query:\n{formatted}"
+
