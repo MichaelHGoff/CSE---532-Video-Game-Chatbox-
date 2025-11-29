@@ -22,10 +22,7 @@ class GameRecommender:
         if "title" not in df.columns and "name" in df.columns:
             df = df.rename(columns={"name": "title"})
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/feature/recommndation-imporvements
         #Pick the required column
         for col in["title", "genre"]:
             if col not in df.columns:
