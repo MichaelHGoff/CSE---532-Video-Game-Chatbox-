@@ -8,6 +8,7 @@ kagglehub==0.1.7
 
 flask==3.0.3
 sqlalchemy==2.0.30
+joblib==1.4.2
 
 # Optional helpers (uncomment if you want them)
 # python-dotenv==1.0.0
