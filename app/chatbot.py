@@ -1,3 +1,6 @@
+import sys, os
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(ROOT)
 import os, sys
 import random
 import pandas as pd
