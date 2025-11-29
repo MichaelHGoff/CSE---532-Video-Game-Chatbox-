@@ -51,7 +51,7 @@ class GameRecommender:
         data = joblib.load(path)
         obj = GameRecommender(data["df"])
         obj.vectorizer = data["vectorizer"]
-        obj.model = data["model"]
+        obj.tfidf_matrix = data["tfidf_matrix"]
         print(f"Model loaded from{path}")
         return obj
 
