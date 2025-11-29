@@ -32,7 +32,7 @@ class GameRecommender:
         self.df["combined"] = self.df["title"]+ " "+self.df["genre"]
 
         # Initialize the feature extractor & model (but *don't train yet*)
-        self.vectorizer = TfidfVectorizer(max_features=1000)
+        self.vectorizer = TfidfVectorizer(max_features=3000)
         self.tfidf_matrix = self.vectorizer.fit_transform(self.df["combined"])
 
     #Using joblib to save/load better optimization
